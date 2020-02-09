@@ -3,7 +3,7 @@
 # Attendees
 
 
-| *Attendee* | *Role and Organisation* |
+| *Attendee* | *Role and Organization* |
 | --------- | -------------- |
 | Kara Trace | CIO, Ursa Major Health  |
 | Anika Hansen | CEO, Jupiter Scheduling Inc |
@@ -13,16 +13,15 @@
 
 # Key Points
 
-* Architecture Project [Roadmap](../../../architecture-roadmap/) Plausibility.
-* Highlighted Risks around Emergency Responder System responsible for realtime 
+* Architecture project [roadmap](../../../architecture-roadmap/) plausibility.
+* Highlighted risks around emergency responder system responsible for realtime 
 hospital search and bed allocation.
 
 # Summary
 
-Most of the group's discussion was focussed on the Emergency Responder System responsible for real-time 'medical-issue' driven 
-hospital allocation. The group do not feel confident in responding to highlighted risks and expectations around 
-both fault tolerance and reliability which are being raised by medical partners
-and external stake holders.
+Most of the group's discussion focused on the emergency responder system responsible for real-time medical issue-driven 
+hospital allocation. The group did not feel confident responding to highlighted risks and expectations around 
+both fault tolerance and reliability raised by medical partners and external stakeholders.
 
 It was decided that a proof of concept needs to be implemented.  
 
@@ -37,5 +36,5 @@ hypothesis below.
 
 ## Outputs
 * [Risk Register](../../../risks/)
-* [Hypothesis](../../../hypothesis-emergency-responder) for a Proof of Concept Emergency Responder
+* [Hypothesis](../../../hypothesis-emergency-responder) for a proof of concept emergency responder
 
