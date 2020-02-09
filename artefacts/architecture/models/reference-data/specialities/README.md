@@ -10,22 +10,22 @@ To be used for capabilities which selecting hospitals by specialism should targe
 | Anaesthetics     | Intensive care medicine |
 | Clinical oncology | Clinical oncology |
 | Dental group | Additional dental specialties |	
-| Dental group | 	Dental and Maxillofacial Radiology |
+| Dental group | 	Dental and maxillofacial radiology |
 | Dental group | Endodontics |
-| Dental group | 	Oral and maxillo-facial surgery |
-| Dental group | 	Oral and Maxillofacial Pathology |
-| Dental group | 	Oral Medicine |
-| Dental group | 	Oral Surgery |
+| Dental group | 	Oral and maxillofacial surgery |
+| Dental group | 	Oral and maxillofacial pathology |
+| Dental group | 	Oral medicine |
+| Dental group | 	Oral surgery |
 | Dental group | 	Orthodontics |
 | Dental group | 	Paediatric dentistry |
 | Dental group | 	Periodontics |
 | Dental group | 	Prosthodontics |
 | Dental group | 	Restorative dentistry |
-| Dental group | 	Special Care Dentistry |
-| Emergency Medicine | Emergency Medicine |	
-| General medicine group |	Acute Internal Medicine |
+| Dental group | 	Special care dentistry |
+| Emergency Medicine | Emergency medicine |	
+| General medicine group |	Acute internal medicine |
 | General medicine group |	Allergy |
-| General medicine group |	Audio Vestibular Medicine |
+| General medicine group |	Audio vestibular medicine |
 | General medicine group |	Cardiology |
 | General medicine group |	Clinical genetics |
 | General medicine group |	Clinical neurophysiology |
@@ -34,8 +34,8 @@ To be used for capabilities which selecting hospitals by specialism should targe
 | General medicine group |	Endocrinology and diabetes mellitus |
 | General medicine group |	Gastroenterology |
 | General medicine group |	General (internal) medicine |
-| General medicine group |	General Med Practitioner |
-| General medicine group |	General Practice (GP) 6 month Training |
+| General medicine group |	General med practitioner |
+| General medicine group |	General practice (GP) 6 month training |
 | General medicine group |	Genito-urinary medicine |
 | General medicine group |	Geriatric medicine |
 | General medicine group |	Infectious diseases |
@@ -49,25 +49,25 @@ To be used for capabilities which selecting hospitals by specialism should targe
 | General medicine group |	Renal medicine  |
 | General medicine group |	Respiratory medicine |
 | General medicine group |	Rheumatology |
-| General medicine group |	Sport and Exercise Medicine |
-| Obstetrics & gynaecology | Community Sexual and Reproductive Health |	
+| General medicine group |	Sport and exercise medicine |
+| Obstetrics & gynecology | Community sexual and reproductive health |	
 | Paediatric group | Paediatric cardiology	 |
 | Paediatric group | Paediatrics |	
 | Pathology group |	Chemical pathology |
-| Pathology group | Diagnostic Neuropathology |
-| Pathology group |	Forensic Histopathology |
+| Pathology group | Diagnostic neuropathology |
+| Pathology group |	Forensic histopathology |
 | Pathology group |	General pathology |
 | Pathology group |	Haematology |
 | Pathology group |	Histopathology |
 | Pathology group |	Immunology |
 | Pathology group |	Medical microbiology |
-| Pathology group |	Paediatric and Perinatal Pathology |
+| Pathology group |	Paediatric and perinatal pathology |
 | Pathology group |	Virology |
-| PHM & CHS group |	Community Health Service Dental |
-| PHM & CHS group |	Community Health Service Medical |
-| PHM & CHS group |	Dental Public Health |
-| PHM & CHS group |	General Dental Practitioner |
-| PHM & CHS group |	Public Health Medicine |
+| PHM & CHS group |	Community health service dental |
+| PHM & CHS group |	Community health service medical |
+| PHM & CHS group |	Dental public health |
+| PHM & CHS group |	General dental practitioner |
+| PHM & CHS group |	Public health medicine |
 | Psychiatry group |	Child and adolescent psychiatry |
 | Psychiatry group |	Forensic psychiatry |
 | Psychiatry group |	General psychiatry |
@@ -76,13 +76,13 @@ To be used for capabilities which selecting hospitals by specialism should targe
 | Psychiatry group |	Psychotherapy |
 | Radiology group |	Clinical radiology |
 | Radiology group |	Nuclear medicine |
-| Surgical group |	Cardio-thoracic surgery |
+| Surgical group |	Cardiothoracic surgery |
 | Surgical group |	General surgery |
 | Surgical group |	Neurosurgery |
 | Surgical group |	Ophthalmology |
 | Surgical group |	Otolaryngology |
 | Surgical group |	Paediatric surgery |
 | Surgical group |	Plastic surgery |
-| Surgical group |	Trauma and orthopaedic surgery |
+| Surgical group |	Trauma and orthopedic surgery |
 | Surgical group |	Urology |
 | Surgical group |	Vascular Surgery |
