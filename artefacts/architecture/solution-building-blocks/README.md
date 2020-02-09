@@ -15,10 +15,10 @@ You may link to additional information stored elsewhere in the repository.
 
 ***
 1. **Building block name**: Solution for creating a new software project.
-1. **Functionality provided**: The building block enables solutions to standardise on project creation.
+1. **Functionality provided**: The building block enables solutions to standardize project creation.
 1. **Link to example implementation or interfaces**:
 https://start.spring.io
-1. **Outstanding work to complete this building block:** Implement docker containers to standardise runing Spring-CLI
+1. **Outstanding work to complete this building block:** Implement docker containers to standardize runing Spring-CLI.
 1. **Architectural alignment**: This building block enables or reflects the following business objectives and principles:
    * Objective 1: *xxxxx*
    * Principle 1: *yyyy*
