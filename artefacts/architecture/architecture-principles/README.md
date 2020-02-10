@@ -19,7 +19,7 @@ all project initiatives should strive to meet them and justify any divergence.
   * Principle B2:  Clarity Through a Fine Grain Separation of Concerns
   * Principle B3: Continuous Integration and Delivery
   * Principle B4: Early Comprehensive and Appropriate Automated Tests
-  * Principle B5: Shift Left Security
+  * Principle B5: Shift-Left Security
   * Principle B6: Opening the Possibility of Extension Through Event-Driven Capabilities
 * C. Architectural Methodology and Process Principles
   * Principle C1: Tailoring the TOGAF 9.2 ADM
@@ -56,6 +56,7 @@ A conflict with a principle will be resolved by changing the framework of the in
 **Statement**: 
 
 Architecture and macro design decisions are made to provide maximum benefit to the enterprise as a whole in its efforts to maximize value to patients impacted by those decisions.
+
 **Rationale:**
 
 This principle embodies "service above self." Decisions made from an enterprise-wide perspective have greater long-term 
