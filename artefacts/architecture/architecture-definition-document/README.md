@@ -164,7 +164,7 @@ The baseline architecture consists of disparate systems targeted at the use case
  ![Baseline state of with separate systems](../../../images/baseline-systems.png)
 
 The separation of systems and extensive manual workflow effort involved in syrnchronizing relevant information between
-systems has been demonstrably unreProviding assistance to emergency services in real-time between hospitals to target:
+systems should provide assistance to emergency services in real-time between hospitals to target:
 
 Appropriate care facilities for a specific case.
 
