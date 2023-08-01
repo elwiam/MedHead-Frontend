@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Mon application React</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+</head>
+<body>
+  <div id="root" class="container"></div>
+
+  <script>
+    window.REACT_APP_API_URL = '<%= process.env.REACT_APP_API_URL %>';
+  </script>
+  <script src="bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Réservation d'hôpital</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Réservation d'hôpital</h1>
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="patientName">Nom du patient :</label>
+                <input type="text" class="form-control" id="patientName" name="patientName" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">Numéro de téléphone :</label>
+                <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="numPatients">Nombre de patients :</label>
+                <input type="number" class="form-control" id="numPatients" name="numPatients" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="numBeds">Nombre de lits disponibles :</label>
+                <input type="number" class="form-control" id="numBeds" name="numBeds" min="0" required>
+            </div>
+            <input type="hidden" id="hospitalId" name="hospitalId">
+            <input type="hidden" id="specialityId" name="specialityId">
+    
+            <button type="submit" class="btn btn-primary">Réserver</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Récupérer les paramètres d'URL
+            var params = new URLSearchParams(window.location.search);
+            var hospitalId = params.get('hospitalId');
+            var specialityId = params.get('specialityId');
+
+            // Utiliser les valeurs récupérées
+            console.log('ID de l\'hôpital :', hospitalId);
+            console.log('ID de la spécialité :', specialityId);
+
+            // Pré-remplir les champs cachés avec les valeurs d'URL
+            $('#hospitalId').val(hospitalId);
+            $('#specialityId').val(specialityId);
+
+            // Masquer le message de succès au chargement de la page
+            $('#successMessage').hide();
+
+            // Soumettre le formulaire de réservation
+            $('#reservationForm').submit(function(event) {
+                event.preventDefault(); // Empêcher le rechargement de la page
+
+                // Réinitialiser les messages d'erreur
+                $('#patientNameError').text('');
+                $('#phoneNumberError').text('');
+
+                // Récupérer les valeurs des champs du formulaire
+                var patientName = $('#patientName').val();
+                var phoneNumber = $('#phoneNumber').val();
+                var numPatients = $('#numPatients').val();
+                var numBeds = $('#numBeds').val();
+
+                // Valider les valeurs du formulaire
+                if (patientName === '') {
+                    $('#patientNameError').text('Veuillez entrer le nom du patient.');
+                    return;
+                }
+
+                var phoneRegex = /^\d{10}$/;
+                if (!phoneRegex.test(phoneNumber)) {
+                    $('#phoneNumberError').text('Veuillez entrer un numéro de téléphone valide (10 chiffres).');
+                    return;
+                }
+
+                // Créer l'objet de requête de réservation
+                var reservationRequest = {
+                    patientName: patientName,
+                    phoneNumber: phoneNumber,
+                    numPatients: numPatients,
+                    numBeds: numBeds,
+                    hospitalId: hospitalId,
+                    specialityId: specialityId
+                };
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/reservation',
+                    contentType: 'application/json',
+                    data: JSON.stringify(reservationRequest),
+                    success: function(response) {
+                        // Utilisez SweetAlert pour afficher le pop-up de succès
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Réservation effectuée avec succès!',
+                            text: 'La réservation a été effectuée avec succès.',
+                            confirmButtonText: 'OK'
+                        }).then((result) => {
+                            // Réinitialiser le formulaire si l'utilisateur clique sur le bouton "OK"
+                            if (result.isConfirmed) {
+                                $('#patientName').val('');
+                                $('#phoneNumber').val('');
+                                $('#numPatients').val('');
+                                $('#numBeds').val('');
+                                $('#speciality').val('');
+                                $('#hospitalId').val(hospitalId);
+                                $('#specialityId').val(specialityId);
+                            }
+                        });
+                    },
+                    error: function(xhr, status, error) {
+                        // Afficher l'erreur dans la console
+                        console.log(xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
