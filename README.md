@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -98,4 +98,4 @@ The MedHead platform is jointly owned and being developed by a consortium of 4 M
 # Architecture Committee Meeting History
 
 * [Meeting 1](./artefacts/architecture/committee/meetings/meeting-1/README.md) which discussed the Emergency Responder System
->>>>>>> upstream/master
+
